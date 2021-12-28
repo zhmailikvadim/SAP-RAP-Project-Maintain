@@ -1,0 +1,10 @@
+@EndUserText.label : 'Table for Categories'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table znbs_semant_ids {
+  key client : abap.clnt not null;
+  key uuid   : znbs_simple_id12 not null;
+
+}

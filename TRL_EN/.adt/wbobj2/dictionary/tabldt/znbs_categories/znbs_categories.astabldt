@@ -1,0 +1,12 @@
+@EndUserText.label : 'Table for Categories'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table znbs_categories {
+  key client : abap.clnt not null;
+  key uuid   : znbs_simple_id not null;
+  type       : znbs_category_type;
+  name       : znbs_category_name;
+
+}

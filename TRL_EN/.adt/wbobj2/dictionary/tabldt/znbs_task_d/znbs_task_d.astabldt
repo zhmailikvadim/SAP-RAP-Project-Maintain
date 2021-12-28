@@ -1,0 +1,19 @@
+@EndUserText.label : 'Draft table for entity ZNBS_I_TASK'
+@AbapCatalog.enhancement.category : #EXTENSIBLE_ANY
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table znbs_task_d {
+  key mandt       : mandt not null;
+  key taskuuid    : sysuuid_x16 not null;
+  epicuuid        : sysuuid_x16;
+  projectuuid     : sysuuid_x16;
+  semanticid      : znbs_semanticid;
+  taskdescription : znbs_taskdesc;
+  taskstatus      : znbs_simple_id;
+  created         : timestamp;
+  changed         : timestamp;
+  dueby           : znbs_dueby;
+  "%admin"        : include sych_bdl_draft_admin_inc;
+
+}

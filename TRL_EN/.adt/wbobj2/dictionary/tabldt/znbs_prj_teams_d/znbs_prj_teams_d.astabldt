@@ -1,0 +1,15 @@
+@EndUserText.label : 'Project Teams'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table znbs_prj_teams_d {
+  key client  : abap.clnt not null;
+  key uuid    : sysuuid_x16 not null;
+  projectuuid : sysuuid_x16;
+  teamid      : znbs_simple_id12;
+  created     : znbs_time_create;
+  changed     : znbs_time_change;
+  "%admin"    : include sych_bdl_draft_admin_inc;
+
+}

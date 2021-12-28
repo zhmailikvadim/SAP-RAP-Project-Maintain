@@ -1,0 +1,11 @@
+@EndUserText.label : 'ZNBS Profiles'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table znbs_profiles {
+  key client      : abap.clnt not null;
+  key profileuuid : znbs_simple_id12 not null;
+  name            : znbs_name;
+
+}

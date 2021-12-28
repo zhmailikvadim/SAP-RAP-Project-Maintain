@@ -1,0 +1,13 @@
+@EndUserText.label : 'Teams'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table znbs_teams {
+  key client  : abap.clnt not null;
+  key uuid    : znbs_simple_id12 not null;
+  name        : znbs_teams_name;
+  description : znbs_teams_description;
+  role        : znbs_role;
+
+}

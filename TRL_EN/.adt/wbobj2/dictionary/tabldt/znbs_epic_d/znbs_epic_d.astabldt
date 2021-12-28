@@ -1,0 +1,22 @@
+@EndUserText.label : 'Draft table for entity ZNBS_I_EPIC'
+@AbapCatalog.enhancement.category : #EXTENSIBLE_ANY
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table znbs_epic_d {
+  key mandt       : mandt not null;
+  key epicuuid    : sysuuid_x16 not null;
+  projectuuid     : sysuuid_x16;
+  semanticid      : znbs_simple_id12;
+  epicdescription : znbs_epicdesc;
+  epicstatus      : znbs_simple_id12;
+  created         : timestamp;
+  changed         : timestamp;
+  dueby           : znbs_dueby;
+  mptstatus       : znbs_mptstatus;
+  ddnumber        : znbs_dd_number;
+  fsnumber        : znbs_fs_number;
+  developer       : sysuuid_x16;
+  "%admin"        : include sych_bdl_draft_admin_inc;
+
+}

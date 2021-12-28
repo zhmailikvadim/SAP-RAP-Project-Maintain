@@ -1,0 +1,4 @@
+alreadyAddedObligatoryFeedQueries=TRL_EN;/sap/bc/adt/runtime/systemmessages;Aug 25, 2011, 9\:36\:00 PM@TRL_EN;/sap/bc/adt/gw/errorlog/variants/errorLogEntriesForMyUser;Sep 28, 2020, 3\:16\:56 PM@TRL_EN;/sap/bc/adt/runtime/dumps/variants/myRuntimeErrors;Aug 25, 2011, 9\:36\:00 PM@TRL_EN;/sap/bc/adt/runtime/dumps/variants/runtimeErrorsCreatedByMe;Aug 25, 2011, 9\:36\:00 PM
+eclipse.preferences.version=1
+feedEntriesStati=
+feedQueriesRestoreInformation=com.sap.adt.feedreader.internal.feed.restore.AbapFeedQueryRestoreFactory@%2Fsap%2Fbc%2Fadt%2Fruntime%2Fsystemmessages;System+Messages;application%2Fatom%2Bxml;%2Fsap%2Fbc%2Fadt%2Fruntime%2Fsystemmessages;false;1 MINUTES;TRL_EN ;-1;true;;20211105214347@

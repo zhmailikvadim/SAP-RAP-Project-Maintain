@@ -1,0 +1,14 @@
+@EndUserText.label : 'Partners'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #ALLOWED
+define table znbs_partners {
+  key client  : abap.clnt not null;
+  key uuid    : znbs_simple_id not null;
+  type        : znbs_partner_type;
+  name        : znbs_partner_name;
+  description : znbs_partner_description;
+  email       : znbs_email;
+
+}

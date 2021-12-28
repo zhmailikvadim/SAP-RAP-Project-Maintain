@@ -1,0 +1,25 @@
+@EndUserText.label : 'Table for Projects'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #ALLOWED
+define table znbs_projects {
+  key client        : abap.clnt not null;
+  key uuid          : sysuuid_x16 not null;
+  semanticid        : znbs_projectid12;
+  description       : znbs_projectdesc;
+  effort            : znbs_effort_days;
+  reportedby        : znbs_simple_id12;
+  ticketowner       : znbs_simple_id12;
+  projectstatus     : znbs_simple_id12;
+  projectsubstatus  : znbs_simple_id12;
+  configurationitem : znbs_simple_id12;
+  category1         : znbs_simple_id12;
+  category2         : znbs_simple_id12;
+  category3         : znbs_simple_id12;
+  category4         : znbs_simple_id12;
+  created           : znbs_time_create;
+  changed           : znbs_time_change;
+  dueby             : znbs_dueby;
+
+}

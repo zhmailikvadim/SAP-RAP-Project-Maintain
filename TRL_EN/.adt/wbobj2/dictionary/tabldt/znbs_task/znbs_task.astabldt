@@ -1,0 +1,18 @@
+@EndUserText.label : 'Tasks'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table znbs_task {
+  key client      : abap.clnt not null;
+  key taskuuid    : sysuuid_x16 not null;
+  epicuuid        : sysuuid_x16 not null;
+  projectuuid     : sysuuid_x16 not null;
+  semanticid      : znbs_simple_id12;
+  taskdescription : znbs_taskdesc;
+  taskstatus      : znbs_simple_id12;
+  created         : znbs_time_create;
+  changed         : znbs_time_change;
+  dueby           : znbs_dueby;
+
+}

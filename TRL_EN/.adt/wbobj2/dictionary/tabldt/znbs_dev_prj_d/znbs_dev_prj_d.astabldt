@@ -1,0 +1,13 @@
+@EndUserText.label : 'Draft table for entity ZNBS_I_DEV_PRJ'
+@AbapCatalog.enhancement.category : #EXTENSIBLE_ANY
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table znbs_dev_prj_d {
+  key mandt               : mandt not null;
+  key developerforprjuuid : sysuuid_x16 not null;
+  developeruuid           : sysuuid_x16;
+  projectuuid             : sysuuid_x16;
+  "%admin"                : include sych_bdl_draft_admin_inc;
+
+}

@@ -1,0 +1,13 @@
+@EndUserText.label : 'Project Status'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table znbs_prj_status {
+  key client          : abap.clnt not null;
+  key projectstatusid : znbs_projectstatusid not null;
+  statustype          : znbs_status_type;
+  flowposition        : znbs_flow_pos;
+  projectstatus       : znbs_projectstatus;
+
+}

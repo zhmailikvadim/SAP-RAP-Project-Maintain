@@ -1,0 +1,22 @@
+@EndUserText.label : 'Epics'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table znbs_epic {
+  key client       : abap.clnt not null;
+  key epicuuid     : sysuuid_x16 not null;
+  projectuuid      : sysuuid_x16 not null;
+  semanticid       : znbs_epic_id12;
+  epicdescription  : znbs_epicdesc;
+  epicstatus       : znbs_simple_id12;
+  functionalexpert : znbs_simple_id12;
+  created          : znbs_time_create;
+  changed          : znbs_time_change;
+  dueby            : znbs_dueby;
+  mptstatus        : znbs_mptstatus;
+  ddnumber         : znbs_dd_number;
+  fsnumber         : znbs_fs_number;
+  developer        : sysuuid_x16;
+
+}

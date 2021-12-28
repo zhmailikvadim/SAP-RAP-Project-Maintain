@@ -1,0 +1,11 @@
+@EndUserText.label : 'Systems'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table znbs_systems {
+  key client : abap.clnt not null;
+  key uuid   : znbs_simple_id not null;
+  systemids  : znbs_system_ids;
+
+}

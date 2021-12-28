@@ -1,0 +1,51 @@
+@EndUserText.label : 'Table for Project Req.'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #ALLOWED
+define table znbs_prj_rq {
+  key client           : abap.clnt not null;
+  key projectuuid      : sysuuid_x16 not null;
+  projectid            : znbs_projectid;
+  projectdescription   : znbs_projectdesc;
+  projectstatusid      : znbs_projectstatusid;
+  projectstartdate     : znbs_startdate;
+  projectenddate       : znbs_enddate;
+  proposeddevstartdate : znbs_startdate;
+  proposeddevenddate   : znbs_enddate;
+  projectmanagerid     : znbs_employeeid;
+  projectmanager       : znbs_name;
+  technicalsmeid       : znbs_employeeid;
+  technicalsme         : znbs_name;
+  novartissmeid        : znbs_employeeid;
+  novartissme          : znbs_name;
+  rqeffortdate         : znbs_rq_effortdate;
+  sbeffortdate         : znbs_sb_effortdate;
+  totalapprovedeffort  : znbs_total_effort;
+  consumedeffort       : znbs_consumed_effort;
+  remainingeffort      : znbs_remaining_effort;
+  effortstatusid       : znbs_projectstatusid;
+  devstatusid          : znbs_projectstatusid;
+  sownumber            : znbs_sow_number;
+  functionalexpertid   : znbs_employeeid;
+  functionalexpert     : znbs_name;
+  technicalexpertid    : znbs_employeeid;
+  technicalexpert      : znbs_name;
+  rtqmilestone         : znbs_milestone;
+  hcmilestone          : znbs_milestone;
+  comments             : znbs_comments;
+  cls22milestone1      : znbs_milestone;
+  cls21milestone2      : znbs_milestone;
+  cls22milestone2      : znbs_milestone;
+  cls21milestone1      : znbs_milestone;
+  effortresponse       : znbs_effort;
+  efforttype           : znbs_effort_type;
+  requestorcomments    : znbs_requestor_comments;
+  bpcomments           : znbs_bp_comments;
+  notification1        : znbs_notification;
+  notification2        : znbs_notification;
+  modifiedby           : znbs_user_modify;
+  itemtype             : znbs_item_type;
+  path                 : znbs_path;
+
+}

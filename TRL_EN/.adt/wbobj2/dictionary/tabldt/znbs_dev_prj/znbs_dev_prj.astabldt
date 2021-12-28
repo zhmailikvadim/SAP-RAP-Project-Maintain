@@ -1,0 +1,12 @@
+@EndUserText.label : 'Developers for Project'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table znbs_dev_prj {
+  key client              : abap.clnt not null;
+  key developerforprjuuid : sysuuid_x16 not null;
+  developeruuid           : sysuuid_x16 not null;
+  projectuuid             : sysuuid_x16 not null;
+
+}

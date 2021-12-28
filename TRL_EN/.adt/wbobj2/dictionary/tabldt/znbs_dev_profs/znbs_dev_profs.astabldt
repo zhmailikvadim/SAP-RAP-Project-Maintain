@@ -1,0 +1,14 @@
+@EndUserText.label : 'Developer Profiles'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table znbs_dev_profs {
+  key client    : abap.clnt not null;
+  key uuid      : sysuuid_x16 not null;
+  developeruuid : sysuuid_x16;
+  profileuuid   : znbs_simple_id12;
+  created       : znbs_time_create;
+  changed       : znbs_time_change;
+
+}

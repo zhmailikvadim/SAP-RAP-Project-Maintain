@@ -1,0 +1,5 @@
+CLASS zbp_nbs_i_developer DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF znbs_i_developer.
+ENDCLASS.
+
+CLASS zbp_nbs_i_developer IMPLEMENTATION.
+ENDCLASS.

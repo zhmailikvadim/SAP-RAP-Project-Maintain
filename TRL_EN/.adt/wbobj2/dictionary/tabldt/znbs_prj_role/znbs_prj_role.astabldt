@@ -1,0 +1,11 @@
+@EndUserText.label : 'Table for Role'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table znbs_prj_role {
+  key client : abap.clnt not null;
+  key roleid : znbs_roleid not null;
+  role       : znbs_role;
+
+}
